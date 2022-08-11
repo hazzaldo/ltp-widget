@@ -18,6 +18,8 @@ function App() {
         >
           Learn React
         </a>
+        <Router path='/404' element={'<h1>Page cannot be found</h1>'} />
+        <Router path='*' element={<Navigate replace to='/404' />} />
       </header>
     </div>
   );
